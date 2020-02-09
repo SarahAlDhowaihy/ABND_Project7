@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/paddingTop">
+
+    <TextView
+        android:id="@+id/title"
+
+        style="@style/ListItemStyle"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/titleDim"
+        android:textStyle="bold"
+        tools:text="News title" />
+
+    <TextView
+        android:id="@+id/author"
+
+        style="@style/ListItemStyle"
+        android:textSize="@dimen/authorDim"
+        tools:text="Author name" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/section"
+            style="@style/ListItemStyle"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/otherDim"
+            tools:text="the section name" />
+
+        <TextView
+            android:id="@+id/date"
+            style="@style/ListItemStyle"
+            android:layout_alignParentRight="true"
+            android:paddingRight="@dimen/paddingRight"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/otherDim"
+            tools:text="May 23,2017" />
+    </RelativeLayout>
+</LinearLayout>
